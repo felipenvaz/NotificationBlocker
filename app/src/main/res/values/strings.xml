@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Notification Blocker</string>
+    <string name="action_settings">Configurar</string>
+    <string name="recently_notifications">Notificações recentes:</string>
+    <string name="recently_notifications_warning">Use estes dados para lhe ajudar a criar seus filtros</string>
+    <string name="settings_filter">Filtros</string>
+    <string name="any">Qualquer</string>
+    <string name="text">Texto</string>
+    <string name="sub_text">SubTexto</string>
+    <string name="title">Título</string>
+    <string name="filter_manager">Configurar Filtro</string>
+    <string name="add" >Adicionar</string>
+    <string name="remove">Remover</string>
+    <string name="save">Salvar</string>
+    <string name="filter_name">Filtro:</string>
+    <string name="filter_app_name">App:</string>
+    <string name="filter_item_for">Filtrar por:</string>
+    <string name="filter_item_at">Em:</string>
+</resources>

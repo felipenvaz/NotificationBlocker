@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/main_recently_notifications"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:text="@string/recently_notifications"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/main_recently_notifications_warning"
+        android:layout_below="@id/main_recently_notifications"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="@string/recently_notifications_warning"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"/>
+
+    <ListView
+        android:id="@+id/main_notifications_list"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/main_recently_notifications_warning"
+        android:layout_above="@+id/main_settings"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"></ListView>
+    <Button
+        android:id="@+id/main_settings"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/action_settings"
+        />
+    <Button
+        android:id="@+id/main_filters"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/settings_filter"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="60dp">
+
+    <ImageView
+        android:src="@drawable/teste"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/app_item_image"/>
+    <TextView
+        android:id="@+id/app_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Clash of Clans"
+        android:layout_toRightOf="@id/app_item_image"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

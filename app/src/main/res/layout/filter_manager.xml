@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/filter_manager_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Nome do filtro:"
+        android:textSize="15dp"
+        android:background="@drawable/custom_border"
+        android:padding="5dp"/>
+    
+    <Spinner
+        android:id="@+id/filter_manager_package"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/filter_manager_name"
+        android:background="@drawable/custom_border"
+        android:layout_marginTop="10dp"
+        ></Spinner>
+
+    <RelativeLayout
+        android:id="@+id/filter_manager_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/filter_manager_package"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/filter_manager_add_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="+"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/custom_border"/>
+        <Button
+            android:id="@+id/filter_manager_remove_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:layout_toRightOf="@id/filter_manager_add_item"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/custom_border"/>
+        <Switch
+            android:id="@+id/filter_manager_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:checked="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/filter_manager_save"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/save"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:id="@+id/filter_manager_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/remove"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"/>
+
+    <ListView
+        android:id="@+id/filter_manager_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter_manager_buttons"
+        android:layout_above="@id/filter_manager_save"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="0dp"></ListView>
+
+</RelativeLayout>

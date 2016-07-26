@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/notification_app_image"
+        android:src="@drawable/teste"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        />
+    
+    <TextView
+        android:id="@+id/notification_app_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/notification_app_image"
+        android:text="Clash of Clans"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:textSize="15dp"/>
+    
+    <TextView
+        android:id="@+id/notification_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Clash of Clans"
+        android:layout_toRightOf="@id/notification_app_image"
+        android:layout_below="@id/notification_app_appname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/notification_app_text"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:textSize="12dp"
+        android:text="Estão atacando sua vila! malucooooooooooooooooooooooooooooooo"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_below="@id/notification_app_title"
+        android:layout_toRightOf="@id/notification_app_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:id="@+id/notification_app_subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:textSize="12dp"
+        android:text="subtext"
+        android:layout_below="@id/notification_app_text"
+        android:layout_toRightOf="@id/notification_app_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+
+</RelativeLayout>
